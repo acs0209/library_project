@@ -1,0 +1,25 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+    url: jdbc:mariadb://localhost:3307/db_library
+    username: root
+    password: 1234
+    driver-class-name: org.mariadb.jdbc.Driver
+  web:
+    resources:
+      static-locations: classpath:/richStatic, classpath:/testStatic
+
+#resource:
+#  path: file:///C:/library/upload/
+#upload:
+#  path: /libraryUploadImg/**
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
+# org.hibernate.type: trace
+
